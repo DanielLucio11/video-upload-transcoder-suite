@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Upload com Transcodificação - Nível Básico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .upload-form {
+            border: 2px dashed #ccc;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Upload com Transcodificação</h1>
+        <h2>Nível Básico</h2>
+        
+        <div class="upload-form">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="video">Selecione um vídeo para upload e transcodificação:</label><br><br>
+                <input type="file" id="video" name="video" accept="video/*" required><br><br>
+                <button type="submit">Enviar Vídeo</button>
+            </form>
+        </div>
+        
+        <div id="result"></div>
+    </div>
+</body>
+</html>
