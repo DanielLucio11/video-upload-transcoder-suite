@@ -30,14 +30,20 @@ Este projeto implementa um sistema de upload de vídeos com feedback em tempo re
 
 ```text
 nivel-medio/
+├── controllers/
+│   └── videoController.js    # Lógica de controle das requisições
 ├── public/
-│   ├── index.html     # Interface principal
-│   ├── script.js      # Lógica do frontend
-│   └── styles.css     # Estilização
-├── uploads/           # Diretório temporário para uploads
-├── outputs/           # Diretório para vídeos processados
-├── server.js          # Servidor principal
-└── package.json       # Dependências e scripts
+│   ├── index.html            # Interface principal
+│   ├── script.js             # Lógica do frontend
+│   └── styles.css            # Estilização
+├── routes/
+│   └── videoRoutes.js        # Definição das rotas da aplicação
+├── services/
+│   └── videoService.js       # Lógica de negócio e processamento de vídeo
+├── uploads/                  # Diretório temporário para uploads
+├── outputs/                  # Diretório para vídeos processados
+├── server.js                 # Servidor principal
+└── package.json              # Dependências e scripts
 ```
 
 ## ▶️ Como Executar
