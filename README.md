@@ -46,6 +46,6 @@ Este é um exemplo básico de um sistema de upload e transcodificação de víde
 - Transcodificação básica para formato MP4
 - Download do vídeo transcodificado
 
-# video-upload-transcoder-suite
+## video-upload-transcoder-suite
 
 TESTE TÉCNICO PARA POSIÇÃO DE DESENVOLVEDOR TECH LEAD FULLSTACK - "Sistema de Upload com Transcodificação"

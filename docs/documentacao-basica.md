@@ -121,6 +121,7 @@ A porta padrão é 3000, mas pode ser alterada definindo a variável de ambiente
 ### Caminho do FFmpeg
 
 O sistema procura o FFmpeg em:
+
 1. Caminho fixo: `C:\ffmpeg\bin\ffmpeg.exe` (Windows)
 2. Comando global: `ffmpeg` (Linux/macOS e Windows com FFmpeg no PATH)
 

@@ -10,24 +10,24 @@ O Video Upload Transcoder Suite é um conjunto de aplicações que demonstram di
 
 ## Níveis de Implementação
 
-1. **Nível Básico** - Implementação simples de upload e transcodificação  
-2. Nível Intermediário - (A ser documentado)  
-3. Nível Médio - (A ser documentado)  
-4. Nível Avançado - (A ser documentado)  
+1. **Nível Básico** - Implementação simples de upload e transcodificação
+2. Nível Intermediário - (A ser documentado)
+3. Nível Médio - (A ser documentado)
+4. Nível Avançado - (A ser documentado)
 5. Nível Especialista - (A ser documentado)
 
 ## Tecnologias Utilizadas
 
-- Node.js  
-- Express.js  
-- FFmpeg  
-- JavaScript  
-- HTML/CSS  
+- Node.js
+- Express.js
+- FFmpeg
+- JavaScript
+- HTML/CSS
 
 ## Pré-requisitos
 
-- Node.js instalado  
-- FFmpeg instalado e acessível no sistema  
+- Node.js instalado
+- FFmpeg instalado e acessível no sistema
 
 ## Como Usar Esta Documentação
 
