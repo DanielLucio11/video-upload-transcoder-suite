@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Vídeo com Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Upload de Vídeo</h1>
+        <p class="subtitle">Converta seus vídeos com feedback em tempo real</p>
+
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📁</div>
+                <div class="upload-text">Clique para selecionar ou arraste seu vídeo aqui</div>
+                <div class="file-info">Formatos suportados: MP4, AVI, MOV, MKV</div>
+                <label for="videoInput" class="hidden-label">Selecionar arquivo de vídeo</label>
+                <input type="file" id="videoInput" name="video" accept="video/*" class="hidden">
+            </div>
+
+            <button type="submit" class="btn" id="uploadBtn">📤 Enviar Vídeo</button>
+            <button type="button" class="btn btn-secondary" id="resetBtn">🔄 Novo Upload</button>
+        </form>
+
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-text">Processando seu vídeo...</div>
+            <div class="time-display" id="timeDisplay">00:00:00</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text">Progresso: <span id="progressPercent">0</span>%</div>
+        </div>
+
+        <div class="result-container" id="resultContainer">
+            <h3 class="result-title">✅ Conversão Concluída!</h3>
+            <p>Seu vídeo foi processado com sucesso.</p>
+            <video controls class="video-preview" id="videoPreview"></video>
+            <br>
+            <a href="#" class="btn" id="downloadBtn" download>📥 Baixar Vídeo</a>
+        </div>
+
+        <div id="errorContainer"></div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
